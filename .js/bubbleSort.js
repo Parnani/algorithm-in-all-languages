@@ -16,7 +16,7 @@
 /**
  * Using 2 for loops.
  */
-export function bubbleSort(items) {
+function bubbleSort(items) {
     const length = items.length;
     let noSwaps;
 
@@ -43,7 +43,7 @@ export function bubbleSort(items) {
 /**
  * Using a while loop and a for loop.
  */
-export function alternativeBubbleSort(arr) {
+function alternativeBubbleSort(arr) {
     let swapped = true;
 
     while (swapped) {
@@ -58,3 +58,9 @@ export function alternativeBubbleSort(arr) {
 
     return arr;
 }
+
+const inputExample = [251, 78, 45, 7, 69, 7777, 142, 458, 215, 21, 87, 111, 147, 146];
+
+const output = bubbleSort(inputExample)
+
+console.log(output) // [7, 21, 45, 69, 78, 87, 111, 142, 146, 147, 215, 251, 458, 7777 ]
